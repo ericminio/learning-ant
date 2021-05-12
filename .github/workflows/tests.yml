@@ -13,4 +13,6 @@ jobs:
       steps:
       - uses: actions/checkout@v2
       - name: Run tests
-        run: docker-compose up tests
+        run: |
+          git submodule update --init --recursive
+          docker-compose up tests
