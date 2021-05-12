@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  
+  tests:
+    build: .
+    image: alpine:ant
+    container_name: ant
+    volumes:
+      - .:/usr/local/src
