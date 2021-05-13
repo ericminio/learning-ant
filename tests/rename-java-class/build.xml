@@ -13,6 +13,9 @@
     </target>
 
     <target name="go" depends="clean,copy">
-        <move file="${inspect.dir}/hello.txt" tofile="${inspect.dir}/world.txt"></move>
+        <move file="${inspect.dir}/HelloWorld.java" tofile="${inspect.dir}/Hello_World.java"></move>
+        <replace file="${inspect.dir}/Hello_World.java" value="Hello_World">
+            <replacetoken>HelloWorld</replacetoken>
+        </replace>
     </target>
 </project>

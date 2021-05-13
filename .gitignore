@@ -4,3 +4,4 @@ plan*
 *.output
 target
 build
+inspect
